@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Youtube</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body style="background-color: rgba(0, 0, 0, 0.986)">
+    <nav class="navbar">
+      <div class="left">
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="22"
+            height="22"
+            viewBox="0,0,256,256"
+          >
+            <g
+              fill="#f9f4f4"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="0.5"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <g transform="scale(8.53333,8.53333)">
+                <path
+                  d="M3,7c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,14c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,21c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="ylogo">
+          <img src="icons/ylogo.png" alt="" class="logo" />
+        </div>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <button class="button">
+          <img
+            style="opacity: 0.8"
+            src="icons/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </button>
+      </div>
+
+      <div class="mic">
+        <i class="fa-solid fa-microphone fa-lg" style="color: #edeff2"></i>
+      </div>
+
+      <div class="right">
+        <div class="create">
+          <img
+            class="video"
+            src="icons/video_call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </div>
+        <div class="bell">
+          <img
+            src="icons/notifications_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </div>
+        <div class="profile">
+          <img
+            class="pic"
+            src="icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="slidebar">
+        <div class="items">
+          <a href=""
+            ><img
+              class="icon1"
+              src="icons/home_24dp_E8EAED_FILL1_wght500_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Home</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/slideshow_24dp_E8EAED_FILL0_wght500_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Shorts</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/subscriptions_24dp_E8EAED_FILL0_wght500_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Subscriptions</p>
+          </a>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="you">
+          <p>You</p>
+
+          <img
+            src="icons/chevron_right_24dp_E8EAED_FILL0_wght500_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/switch_account_24dp_E8EAED_FILL0_wght500_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Your channel</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/history_24dp_E8EAED_FILL0_wght500_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>History</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/playlist_play_24dp_E8EAED_FILL0_wght500_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Playlists</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/slideshow_24dp_E8EAED_FILL0_wght500_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Your videos</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/schedule_24dp_E8EAED_FILL0_wght500_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Watch Later</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/thumb_up_24dp_E8EAED_FILL0_wght500_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Liked videos</p></a
+          >
+        </div>
+        <div class="line"></div>
+
+        <div class="subs">
+          <a href="">Subscriptions</a>
+        </div>
+
+        <div class="items1">
+          <a href="">
+            <img
+              src="icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>LifeofShazzam</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>AF WORLD by AF...</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Brototype Malay...</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>SuperSimpleDev</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>AbhiYugam.</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Producer Reacts M...</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <p>Learn Coding</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/keyboard_arrow_down_24dp_E8EAED_FILL0_wght500_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Show more</p></a
+          >
+        </div>
+        <div class="line"></div>
+
+        <div class="exp">
+          <a href="">Explore</a>
+        </div>
+
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/local_fire_department_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Trending</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/local_mall_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Shopping</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/music_note_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Music</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/movie_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Films</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/sensors_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Live</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/stadia_controller_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Gaming</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/news_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>News</p></a
+          >
+        </div>
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/trophy_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Sports</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/lightbulb_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Courses</p></a
+          >
+        </div>
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/styler_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Fashion & beauty</p></a
+          >
+        </div>
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/podcasts_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Prodcasts</p></a
+          >
+        </div>
+
+        <div class="line"></div>
+
+        <div class="exp">
+          <a href=""> More from Youtube</a>
+        </div>
+
+        <div class="yp">
+          <a href=""
+            ><img src="icons/youtube (2).png" alt="" />
+            <p>YouTube Premium</p></a
+          >
+        </div>
+
+        <div class="yp">
+          <a href=""
+            ><img src="icons/youtube (1).png" alt="" />
+            <p>YouTube Studio</p></a
+          >
+        </div>
+
+        <div class="yp">
+          <a href=""
+            ><img src="icons/music.png" alt="" />
+            <p>YouTube Music</p></a
+          >
+        </div>
+
+        <div class="yp">
+          <a href=""
+            ><img src="icons/youtube-kids (1).png" alt="" />
+            <p>YouTube Kids</p></a
+          >
+        </div>
+        <div class="line1"></div>
+
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/settings_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Settings</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href=""
+            ><img
+              src="icons/flag_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Report history</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/help_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Help</p></a
+          >
+        </div>
+
+        <div class="items">
+          <a href="">
+            <img
+              src="icons/chat_info_24dp_E8EAED_FILL0_wght200_GRAD-25_opsz24.svg"
+              alt=""
+            />
+            <p>Send feedback</p></a
+          >
+        </div>
+        <div class="line"></div>
+
+        <div class="desc">
+          About press Copyright
+          <br />
+          Contact us Creator Advertise
+          <br />
+          Developers
+          <br />
+          <br />
+
+          Terms Privacy Policy & Safety
+          <br />How YouTube works <br />Test new features
+          <br />
+          <br />
+
+          <span>@ 2023 Google LLC</span>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="button-wrap">
+          <button>All</button>
+          <button>Music</button>
+          <button>Gaming</button>
+          <button>Technology</button>
+          <button>Action Thrillers</button>
+          <button>Computer Programming</button>
+          <button>New Cinema</button>
+          <button>Explore new things</button>
+          <button>Indian Cinema</button>
+          <button>Cartoon Shows</button>
+          <button>UI/UX designing</button>
+          <button>All</button>
+          <button>All</button>
+          <button>All</button>
+          <button>All</button>
+          <button>All</button>
+          <button>All</button>
+        </div>
+        <div class="videos">
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic1.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img1.jpg" />
+              <div class="vid-info">
+                <a href="">കലാകാരന്മാർ 🤣 Art challenge ✂️ Chattambees</a>
+                <p class="name">Chattambees</p>
+                <p class="year">2.1M views &#x2022; 2 years ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic2.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img2.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >കാർ പൊളിച്ച് രാജവെമ്പാലയെ പിടികൂടുന്ന ത്രില്ലടിപ്പി...</a
+                >
+                <p class="name">Kaumudy</p>
+                <p class="year">557K views &#x2022; 10 months ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic3.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img3.jpg" />
+              <div class="vid-info">
+                <a href="">ഇഷ്ടമുള്ള Reels കണ്ട് അപ്പോൾ തന്നെ Withdraw ...</a>
+                <p class="name">AMMUS TALKS</p>
+                <p class="year">287K views &#x2022; 1 year ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic4.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img4.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >Learn English with RATATOUILLE — Remy Meets Linguini</a
+                >
+                <p class="name">Learn English With TV Series</p>
+                <p class="year">2M views &#x2022; 1 year ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic5.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img5.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >Cisco 2025 | Off campus hiring | Software engineer | Apply
+                  now</a
+                >
+                <p class="name">Dee_coodes</p>
+                <p class="year">462 views &#x2022; 4 hours ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic6.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img6.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >Host a Static Website for Free with a Custom Domain</a
+                >
+                <p class="name">Techy Druid</p>
+                <p class="year">17k views &#x2022; 1 year ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic7.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img7.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >Doctor Strange in the Multiverse of Madness - Extended
+                  Preview (2022) | Vudu</a
+                >
+                <p class="name">Fandango at Home</p>
+                <p class="year">39M views &#x2022; 2 years ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic8.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img1.jpg" />
+
+              <div class="vid-info">
+                <a href=""
+                  >Big vs Medium vs Small 🤪 Last Twist 💰😍 Challenge Video</a
+                >
+                <p class="name">Chattambees</p>
+                <p class="year">2.4M views &#x2022; 2 years ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic9.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img9.jpg" />
+              <div class="vid-info">
+                <a href="">Americans try KERALA Food for the FIRST TIME!!</a>
+                <p class="name">OUR STUPID REACTIONS</p>
+                <p class="year">253K views &#x2022; 4 months ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic10.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img10.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >What is the future of Software Engineering in next 5
+                  years?</a
+                >
+                <p class="name">Apna College</p>
+                <p class="year">398K views &#x2022; 2 weeks ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic11.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img11.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >JavaScript Tutorial Full Course - Beginner to Pro (2024)</a
+                >
+                <p class="name">SuperSimpleDev</p>
+                <p class="year">1.7M views &#x2022; 4 months ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic12.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img12.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >Backend Server setup for Ecommerce site | ExpressJS | JWT
+                  Auth | MongoDB | Postman</a
+                >
+                <p class="name">Fitness freak Computer geek</p>
+                <p class="year">544 views &#x2022; 2 days ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic13.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img13.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >A to Z EATING CHALLENGE 🍔😂 For 24 Hours 😨 We Talks
+                  #wetalks</a
+                >
+                <p class="name">We Talks</p>
+                <p class="year">681K views &#x2022; 6 months ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic14.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img1.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >Language Challenge 😂 MALAYALAM vs ENGLISH vs TAMIL vs
+                  HINDI</a
+                >
+                <p class="name">Chattambees</p>
+                <p class="year">928K views &#x2022; 2 weeks ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic15.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img15.jpg" />
+              <div class="vid-info">
+                <a href="">My Journey 🚀 | BCA To 50 LPA 🤑</a>
+
+                <p class="name">Neeraj Walia</p>
+                <p class="year">302K views &#x2022; 2 months ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="vid-list">
+            <a href=""
+              ><img src="images/pic16.webp" class="thumbnail" /><button
+                class="time"
+              >
+                7.08
+              </button></a
+            >
+
+            <div class="info">
+              <img src="images/img16.jpg" />
+              <div class="vid-info">
+                <a href=""
+                  >'Haule Haule' पर Avirbhav और Pawandeep के Brilliant
+                  Expressi..</a
+                >
+                <p class="name">SET India</p>
+                <p class="year">1.2M views &#x2022; 3 weeks ago</p>
+              </div>
+              <img
+                style="width: 22px; margin-left: 50px; margin-top: -18px"
+                src="icons/more_vert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
